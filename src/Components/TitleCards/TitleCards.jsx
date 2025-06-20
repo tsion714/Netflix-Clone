@@ -17,7 +17,6 @@ const TitleCards = ({title, category}) => {
       Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxZTA5N2I1ZDIzM2I1NmJmMmRmZjg1ODhmZDg5Y2JkZSIsIm5iZiI6MTc0MDUzNjI1OS42NDUsInN1YiI6IjY3YmU3OWMzZTI2NDIyMzUyZGVmYTNmMiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.dMCulb11Zuf1HkeU1BSqcUVuZiq0B-UdLOWVN04msQU'
     }
   };
-  
 
 const handleWheel = (event) =>{
   event.preventDefault();
