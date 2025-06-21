@@ -6,6 +6,8 @@ import bell_icon from '../../assets/bell_icon.svg'
 import Profile_img from '../../assets/profile_img.png'
 import caret_icon from '../../assets/caret_icon.svg'
 import { logout } from '../Firebase'
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 
 
@@ -38,12 +40,18 @@ const Navbar = () => {
         </ul>
         </div>
         <div className="navbar-right">
-            <img src={search_icon} alt="" className='icons'/>
+          <div className='icons'>
+        <i className="fas fa-search"></i>
+        </div>
             <p>Children</p>
-            <img src={bell_icon} alt="" className='icons'/>
+            <div className='icons'>
+            <i className="fas fa-bell"></i>
+            </div>
             <div className="navbar-profile">
             <img src={Profile_img} alt="" className='profile'/>
-            <img src={caret_icon} alt="" />
+            <div className='icons'>
+            <i className="fa-solid fa-caret-down"></i>
+            </div>
             <div className='dropdown'>
                 <p onClick={() => {logout()}}>Sign Out of Netflix</p>
             </div>
